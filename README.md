@@ -43,4 +43,9 @@ struct _IO_FILE_complete
   /* Make sure we don't get into trouble again.  */
   char _unused2[15 * sizeof (int) - 4 * sizeof (void *) - sizeof (size_t)];
 };
+struct _IO_FILE_plus
+{
+  FILE file;
+  const struct _IO_jump_t *vtable;
+};
 ```
