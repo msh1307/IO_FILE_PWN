@@ -52,6 +52,7 @@ class IO_FILE:
                 p16(self._cur_column) + \
                 p8(self._vtable_offset) + \
                 p8(self._shortbuf) + \
+                p32(0) + \
                 p64(self._lock) + \
                 p64(self._offset) + \
                 p64(self._codecvt) + \
