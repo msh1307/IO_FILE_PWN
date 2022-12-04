@@ -62,5 +62,5 @@ class IO_FILE:
                 p64(self.__pad5) + \
                 p32(0) + \
                 p32(self._mode) + \
-                p64(self._unused2)*4 + \
+                p64(self._unused2)*2 + \
                 p64(self.vtable)
