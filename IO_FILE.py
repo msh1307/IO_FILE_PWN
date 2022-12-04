@@ -28,7 +28,7 @@ class IO_FILE:
         self._freeres_list = 0
         self._freeres_buf = 0
         self.__pad5 = 0
-        self._mode = 0xffffffff
+        self._mode = 0
         self._unused2 = 0
         self.vtable = 0
     def get_bytes(self) -> bytes:
